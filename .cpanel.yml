@@ -4,7 +4,11 @@
 # a domain-named subfolder, unlike the nefotir.ai/nefotir.com addon-domain
 # setup). This currently targets a staging subdomain instead of the live
 # root — see README.md for the production cutover step.
+#
+# NOTE the actual document root cPanel assigned to the staging subdomain
+# is /home/thalwyas/staging.thayliaventuris.com (confirmed spelling, not
+# a typo — verify this stays correct if the subdomain is ever recreated).
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/thalwyas/public_html/staging.thaliaventuris.com/
+    - export DEPLOYPATH=/home/thalwyas/staging.thayliaventuris.com/
     - /bin/cp -R index.html Growth Contacts News-and-Insights At-a-Glance assets contact-handler.php $DEPLOYPATH
