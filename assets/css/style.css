@@ -322,15 +322,20 @@ h1, h2, h3, h4, h5 {
 .article-list {
   padding: 56px 0;
   display: grid;
-  gap: 32px;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .article {
   display: grid;
   grid-template-columns: 260px 1fr;
   gap: 24px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 32px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px 28px;
 }
+.article p { font-size: 0.95rem; }
 @media (max-width: 700px) {
   .article { grid-template-columns: 1fr; }
 }
@@ -382,11 +387,17 @@ h1, h2, h3, h4, h5 {
   color: #0a9585;
 }
 .link-list {
-  padding: 0 0 64px;
+  max-width: 900px;
+  margin: 0 auto 56px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px 28px;
 }
-.link-list h2 { color: var(--navy); margin-bottom: 0.8em; }
-.link-list ul { padding-left: 1.2em; }
-.link-list li { margin-bottom: 0.6em; }
+.link-list h2 { color: var(--navy); margin-bottom: 0.6em; font-size: 1.3rem; }
+.link-list ul { padding-left: 1.2em; margin: 0; }
+.link-list li { margin-bottom: 0.5em; font-size: 0.95rem; }
+.link-list > p { font-size: 0.95rem; }
 
 /* ---------- At a glance ---------- */
 .glance {
