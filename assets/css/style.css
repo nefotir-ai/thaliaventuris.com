@@ -265,6 +265,13 @@ h1, h2, h3, h4, h5 {
   background: var(--gray-bg);
   padding: 48px 0;
 }
+.news-headlines-img {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
 .news-hero .box {
   background: var(--white);
   border: 1px solid var(--border);
