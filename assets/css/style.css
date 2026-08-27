@@ -197,6 +197,18 @@ h1, h2, h3, h4, h5 {
   text-shadow: 0 2px 10px rgba(0,0,0,0.4);
   margin: 0;
 }
+/* Brightens just the lower portion of the photo (e.g. the newspapers):
+   a second copy of the same image, clipped to that region, with a real
+   brightness/contrast filter — keeps full detail and contrast, unlike
+   a translucent white wash which fades everything out. */
+.photo-band-img-bright {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(1.25) contrast(1.1) saturate(1.1);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 42%, black 58%);
+  mask-image: linear-gradient(to bottom, transparent 0%, transparent 42%, black 58%);
+}
 .page-band h1 { color: var(--white); margin-bottom: 0.3em; }
 .page-band p {
   max-width: 720px;
