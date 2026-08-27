@@ -191,6 +191,7 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center bottom;
 }
 .photo-band-overlay {
   position: absolute;
@@ -224,8 +225,8 @@ h1, h2, h3, h4, h5 {
   top: 0;
   left: 0;
   filter: brightness(1.25) contrast(1.1) saturate(1.1);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 42%, black 58%);
-  mask-image: linear-gradient(to bottom, transparent 0%, transparent 42%, black 58%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 22%, black 38%);
+  mask-image: linear-gradient(to bottom, transparent 0%, transparent 22%, black 38%);
 }
 .page-band h1 { color: var(--white); margin-bottom: 0.3em; }
 .page-band p {

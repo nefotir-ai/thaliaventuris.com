@@ -47,9 +47,25 @@ fields and emails the lead via PHP's `mail()`. Destination address defaults
 to `social@thaliaventuris.com`; override by setting the `CONTACT_TO_EMAIL`
 environment variable on the host if needed.
 
-## Deployment (not yet active)
+## Deployment
 
-Not connected to any live hosting yet — this is local-only until explicitly
-approved. When ready, the plan mirrors `../nefotir.ai`: cPanel **Git™ Version
-Control**, pulling from a GitHub repo and deploying via `.cpanel.yml` into
-the site's document root on the `thalwyas` cPanel account.
+Same mechanism as `../nefotir.ai`: cPanel **Git™ Version Control**, pulling
+from `git@github.com:nefotir-ai/thaliaventuris.com.git` and deploying via
+`.cpanel.yml` on the `thalwyas` cPanel account.
+
+`thaliaventuris.com` is the **primary domain** on that account (unlike
+nefotir.ai/nefotir.com, which are addon domains), so its live document root
+is `/home/thalwyas/public_html/` directly, not a domain-named subfolder.
+
+**Current state**: `.cpanel.yml` targets a staging subdomain
+(`staging.thaliaventuris.com`, expected at
+`/home/thalwyas/public_html/staging.thaliaventuris.com/` — confirm the exact
+path cPanel assigns when creating it) so the site — especially the PHP
+contact form — can be verified in the real hosting environment before
+cutting over production.
+
+**Production cutover** (once staging is verified): change `DEPLOYPATH` in
+`.cpanel.yml` to `/home/thalwyas/public_html/` and redeploy. This replaces
+the current live Namecheap Website Builder/Sitejet site immediately — do
+this deliberately, not as a side effect. The full Sitejet export remains
+backed up at `thaliaventuris/website` on GitHub as a rollback point.

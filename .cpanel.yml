@@ -1,5 +1,10 @@
 ---
+# thaliaventuris.com is the PRIMARY domain on the thalwyas cPanel account,
+# so its live document root is /home/thalwyas/public_html/ directly (not
+# a domain-named subfolder, unlike the nefotir.ai/nefotir.com addon-domain
+# setup). This currently targets a staging subdomain instead of the live
+# root — see README.md for the production cutover step.
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/thalwyas/staging.thaliaventuris.com/
+    - export DEPLOYPATH=/home/thalwyas/public_html/staging.thaliaventuris.com/
     - /bin/cp -R index.html Growth Contacts News-and-Insights At-a-Glance assets contact-handler.php $DEPLOYPATH
