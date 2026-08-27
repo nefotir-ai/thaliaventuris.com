@@ -203,6 +203,15 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto 18px;
   color: var(--indigo);
 }
+.card .card-photo {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 18px;
+  border: 3px solid var(--gray-bg);
+  box-shadow: 0 2px 8px rgba(28,61,121,0.18);
+}
 .card h3 {
   font-size: 1.15rem;
   color: var(--navy);
