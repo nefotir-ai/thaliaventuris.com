@@ -1,0 +1,9 @@
+{
+  "name": "thaliaventuris-com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "thaliaventuris.com marketing site (static HTML + PHP contact handler, custom-built to replace the Namecheap Website Builder/Sitejet version)",
+  "scripts": {
+    "dev": "python3 -m http.server 8081"
+  }
+}
