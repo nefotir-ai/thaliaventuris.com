@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacts | Thalia Venturis Partners</title>
+<meta name="description" content="Connect with Thalia Venturis Partners to explore strategic investment opportunities and corporate growth solutions in Suriname.">
+<link rel="icon" href="../assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css?v=18">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="../" class="brand">
+      <img src="../assets/images/TVP-Logo-512x512.png" alt="Thalia Venturis Partners logo">
+      <span>Growth Equity</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../Growth/">Growth</a></li>
+        <li><a href="../Contacts/" class="active">Contacts</a></li>
+        <li><a href="../News-and-Insights/">News and Insights</a></li>
+        <li><a href="../At-a-Glance/">At a Glance</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-band" style="background-image: url('../assets/images/band-contacts.jpg');">
+  <div class="container">
+    <h1>Get in Touch with Thalia Venturis Partners</h1>
+    <p>Connect with Thalia Venturis Partners to explore strategic investment opportunities and corporate growth solutions. Our team is ready to provide expert guidance on partnerships and advisory services tailored to your business needs.</p>
+  </div>
+</section>
+
+<section class="contact-wrap">
+  <form id="contact-form" method="POST" action="/contact-handler.php" novalidate>
+    <div class="form-field">
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" required autocomplete="name">
+    </div>
+    <div class="form-field">
+      <label for="phone">Phone *</label>
+      <input type="tel" id="phone" name="phone" required autocomplete="tel">
+    </div>
+    <div class="form-field">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required autocomplete="email">
+    </div>
+    <div class="form-field">
+      <label for="address">Address *</label>
+      <input type="text" id="address" name="address" required autocomplete="street-address">
+    </div>
+    <div class="form-field">
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <!-- Honeypot: hidden from real visitors, bots tend to fill every field -->
+    <div class="form-field hp-field" aria-hidden="true">
+      <label for="company_website">Leave this field blank</label>
+      <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
+    </div>
+    <button type="submit" class="submit-btn">Submit</button>
+    <p class="form-note">Fields marked * are required. We respond to all inquiries within 1–2 business days.</p>
+    <div id="form-status" class="form-status" role="status"></div>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-heading">Trusted Business Partners</p>
+    <div class="footer-items">
+      <div>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18"/><line x1="9" y1="7" x2="9" y2="7.01"/><line x1="15" y1="7" x2="15" y2="7.01"/><line x1="9" y1="11" x2="9" y2="11.01"/><line x1="15" y1="11" x2="15" y2="11.01"/><line x1="9" y1="15" x2="9" y2="15.01"/><line x1="15" y1="15" x2="15" y2="15.01"/><line x1="10" y1="21" x2="10" y2="17"/><line x1="14" y1="21" x2="14" y2="17"/></svg>
+        <h5>About Thalia Venturis Partners</h5>
+      </div>
+      <div>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="14.5,9.5 10.5,10.5 9.5,14.5 13.5,13.5"/></svg>
+        <h5>Our Vision &amp; Values</h5>
+      </div>
+      <div>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c2.3.4 4 2.3 4.5 5.8"/></svg>
+        <h5>Leadership Team</h5>
+      </div>
+      <div>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c8 0 14-6 14-14 0 0-11-1-14 6-2 5 0 8 0 8Z"/><path d="M5 19c1-3 3-6 6-8"/></svg>
+        <h5>Corporate Responsibility</h5>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="copyright-year">2026</span> <a href="../">Thalia Venturis Partners</a> — Growth Equity</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/contact-form.js"></script>
+</body>
+</html>

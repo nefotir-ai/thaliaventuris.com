@@ -1,0 +1,35 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1E3D"/>
+      <stop offset="65%" stop-color="#0d3a5e"/>
+      <stop offset="100%" stop-color="#0FBFA6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="240" height="240" rx="52" fill="url(#bg)"/>
+
+  <!-- cloud, floating above the eye -->
+  <g>
+    <circle cx="104" cy="52" r="10" fill="#0FBFA6"/>
+    <circle cx="120" cy="44" r="13" fill="#0FBFA6"/>
+    <circle cx="136" cy="52" r="10" fill="#0FBFA6"/>
+    <rect x="98" y="52" width="44" height="12" rx="6" fill="#0FBFA6"/>
+  </g>
+
+  <!-- "cloud seer": eye -->
+  <path d="M 15 145 Q 120 45 225 145 Q 120 215 15 145 Z" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- pupil -->
+  <circle cx="120" cy="137" r="17" fill="#C9A227"/>
+
+  <!-- eyelashes -->
+  <g stroke="#FFFFFF" stroke-width="6" stroke-linecap="round">
+    <path d="M 57 113 L 41 97"/>
+    <path d="M 88 100 L 79 82"/>
+    <path d="M 120 95 L 120 75"/>
+    <path d="M 152 100 L 161 82"/>
+    <path d="M 183 113 L 199 97"/>
+  </g>
+</svg>
