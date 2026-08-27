@@ -168,11 +168,14 @@ h1, h2, h3, h4, h5 {
    (the whole source image, uncropped — nothing hidden or split off) ---------- */
 .photo-band {
   position: relative;
+  height: 260px;
+  overflow: hidden;
 }
 .photo-band-img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 .photo-band-overlay {
   position: absolute;
@@ -309,7 +312,7 @@ h1, h2, h3, h4, h5 {
 /* ---------- News / insights ---------- */
 .news-hero {
   background: var(--gray-bg);
-  padding: 48px 0;
+  padding: 24px 0;
 }
 .news-hero .box {
   background: var(--white);
@@ -320,7 +323,7 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 .article-list {
-  padding: 56px 0;
+  padding: 32px 0 40px;
   display: grid;
   gap: 24px;
   max-width: 900px;
