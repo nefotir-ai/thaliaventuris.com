@@ -346,6 +346,43 @@ h1, h2, h3, h4, h5 {
   color: var(--indigo);
   margin-bottom: 0.5em;
 }
+/* Breaking News: a badge that pulses to draw the eye, distinct from the
+   plain text-only tags used elsewhere on the page. */
+.tag-breaking {
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: #dc2626;
+  color: var(--white);
+  animation: breaking-glow 1.8s ease-in-out infinite;
+}
+@keyframes breaking-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(220,38,38,0.55); }
+  50% { box-shadow: 0 0 12px 4px rgba(220,38,38,0.55); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tag-breaking { animation: none; }
+}
+
+/* Nefotir.ai mention: their own brand mark and accent color, so it
+   reads as a distinct partner brand rather than blending into ours. */
+.nefotir-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.article .nefotir-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.nefotir-link {
+  color: #0FBFA6;
+}
+.nefotir-link:hover {
+  color: #0a9585;
+}
 .link-list {
   padding: 0 0 64px;
 }
