@@ -2,9 +2,14 @@
 # thaliaventuris.com is the PRIMARY domain on the thalwyas cPanel account,
 # so its live document root is /home/thalwyas/public_html/ directly (not
 # a domain-named subfolder, unlike the nefotir.ai/nefotir.com addon-domain
-# setup). This currently targets a staging subdomain instead of the live
-# root — see README.md for the production cutover step.
+# setup).
+#
+# STAGING vs PRODUCTION: toggle which DEPLOYPATH line is active below.
+# Only one "export DEPLOYPATH=" line should be uncommented at a time.
+# Switching to the public_html line and deploying is the real production
+# cutover — it overwrites the live Sitejet-served site immediately.
 deployment:
   tasks:
     - export DEPLOYPATH=/home/thalwyas/staging.thaliaventuris.com/
+    # - export DEPLOYPATH=/home/thalwyas/public_html/
     - /bin/cp -R index.html Growth Contacts News-and-Insights At-a-Glance assets contact-handler.php $DEPLOYPATH
