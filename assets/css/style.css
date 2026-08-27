@@ -322,6 +322,16 @@ h1, h2, h3, h4, h5 {
   max-width: 900px;
   margin: 0 auto;
 }
+.box-with-logo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.box-logo-link { flex-shrink: 0; }
+.box-logo { width: 130px; height: auto; }
+@media (max-width: 600px) {
+  .box-with-logo { flex-direction: column; align-items: flex-start; }
+}
 .article-list {
   padding: 32px 0 40px;
   display: grid;
