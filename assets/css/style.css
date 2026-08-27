@@ -428,11 +428,46 @@ h1, h2, h3, h4, h5 {
 .link-list > p { font-size: 0.95rem; }
 
 /* ---------- At a glance ---------- */
-.glance {
-  padding: 56px 0 64px;
+.glance-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 48px 0 16px;
+}
+@media (max-width: 900px) {
+  .glance-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+  .glance-grid { grid-template-columns: 1fr; }
+}
+.glance-tile {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 28px 20px;
   text-align: center;
 }
-.glance img { max-width: 100%; margin: 0 auto; }
+.glance-tile .icon {
+  width: 40px;
+  height: 40px;
+  color: var(--indigo);
+  margin: 0 auto 14px;
+}
+.glance-tile h3 {
+  font-size: 1rem;
+  color: var(--navy);
+  margin-bottom: 0.3em;
+}
+.glance-tile p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0;
+}
+.glance-more {
+  text-align: center;
+  padding: 8px 0 64px;
+  font-weight: 600;
+}
 
 /* ---------- Contact form ---------- */
 .contact-wrap {
