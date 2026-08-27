@@ -59,10 +59,9 @@ is `/home/thalwyas/public_html/` directly, not a domain-named subfolder.
 
 **Current state**: `.cpanel.yml` targets a staging subdomain
 (`staging.thaliaventuris.com`, document root confirmed at
-`/home/thalwyas/staging.thayliaventuris.com/` — note the spelling, it's
-not a typo, that's the actual folder cPanel assigned) so the site —
-especially the PHP contact form — can be verified in the real hosting
-environment before cutting over production.
+`/home/thalwyas/staging.thaliaventuris.com/`) so the site — especially
+the PHP contact form — can be verified in the real hosting environment
+before cutting over production.
 
 **Production cutover** (once staging is verified): change `DEPLOYPATH` in
 `.cpanel.yml` to `/home/thalwyas/public_html/` and redeploy. This replaces
