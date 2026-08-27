@@ -164,8 +164,8 @@ h1, h2, h3, h4, h5 {
 }
 .page-band .container { position: relative; z-index: 1; }
 
-/* ---------- Photo band: title overlaid directly on a full-bleed photo,
-   with a second photo flush-joined beneath it (no gap) ---------- */
+/* ---------- Photo band: title overlaid directly on a full-bleed photo
+   (the whole source image, uncropped — nothing hidden or split off) ---------- */
 .photo-band {
   position: relative;
 }
@@ -183,6 +183,14 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   color: var(--white);
   background: linear-gradient(120deg, rgba(28,61,121,0.55), rgba(28,61,121,0.35));
+}
+/* Used when the photo has its own strong focal point lower down (e.g. the
+   News banner's newspapers) — keeps the title's dark backdrop up top only,
+   fading to fully clear so the rest of the photo isn't dimmed. */
+.photo-band-overlay-top {
+  align-items: flex-start;
+  background: linear-gradient(to bottom, rgba(20,44,89,0.78) 0%, rgba(20,44,89,0.45) 45%, rgba(20,44,89,0) 75%);
+  padding-top: 40px;
 }
 .photo-band-overlay h1 {
   color: var(--white);
