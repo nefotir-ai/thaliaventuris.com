@@ -346,18 +346,16 @@ h1, h2, h3, h4, h5 {
   color: var(--indigo);
   margin-bottom: 0.5em;
 }
-/* Breaking News: a badge that pulses to draw the eye, distinct from the
-   plain text-only tags used elsewhere on the page. */
+/* Breaking News: same plain-text tag style as "In the know", just with
+   a pulsing glow on the text itself (on-theme indigo) to draw the eye
+   without a jarring badge/box. */
 .tag-breaking {
-  padding: 4px 10px;
-  border-radius: 4px;
-  background: #dc2626;
-  color: var(--white);
+  color: var(--indigo);
   animation: breaking-glow 1.8s ease-in-out infinite;
 }
 @keyframes breaking-glow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(220,38,38,0.55); }
-  50% { box-shadow: 0 0 12px 4px rgba(220,38,38,0.55); }
+  0%, 100% { text-shadow: 0 0 0 rgba(96,122,230,0); }
+  50% { text-shadow: 0 0 8px rgba(96,122,230,0.9); }
 }
 @media (prefers-reduced-motion: reduce) {
   .tag-breaking { animation: none; }
