@@ -293,6 +293,33 @@ h1, h2, h3, h4, h5 {
 }
 .card p { color: var(--text-light); font-size: 0.95rem; margin: 0; }
 
+/* ---------- Reusable CTA button (links styled as buttons) ---------- */
+.cta-wrap { text-align: center; padding: 8px 0 64px; }
+.cta-wrap-tight { padding: 4px 0 20px; }
+.cta-btn {
+  display: inline-block;
+  background: transparent;
+  color: var(--indigo);
+  border: 1.5px solid var(--indigo);
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.cta-btn:hover { background: var(--indigo); color: var(--white); text-decoration: none; }
+/* Pulses a reddish glow on the button text to draw the eye without a
+   loud fill color — matches the "Breaking News" glow treatment. */
+.cta-btn-glow { animation: cta-glow 1.8s ease-in-out infinite; }
+@keyframes cta-glow {
+  0%, 100% { text-shadow: 0 0 0 rgba(220,38,38,0); }
+  50% { text-shadow: 0 0 8px rgba(220,38,38,0.7); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cta-btn-glow { animation: none; }
+}
+
 /* ---------- Growth sector grid ---------- */
 .sectors {
   display: grid;
