@@ -313,8 +313,8 @@ h1, h2, h3, h4, h5 {
    loud fill color — matches the "Breaking News" glow treatment. */
 .cta-btn-glow { animation: cta-glow 1.8s ease-in-out infinite; }
 @keyframes cta-glow {
-  0%, 100% { text-shadow: 0 0 0 rgba(220,38,38,0); }
-  50% { text-shadow: 0 0 8px rgba(220,38,38,0.7); }
+  0%, 100% { text-shadow: 0 0 0 rgba(255,255,255,0); }
+  50% { text-shadow: 0 0 8px rgba(255,255,255,0.9); }
 }
 @media (prefers-reduced-motion: reduce) {
   .cta-btn-glow { animation: none; }
