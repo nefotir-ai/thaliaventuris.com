@@ -12,7 +12,7 @@ deployment:
   tasks:
     # - export DEPLOYPATH=/home/thalwyas/staging.thaliaventuris.com/
     - export DEPLOYPATH=/home/thalwyas/public_html/
-    - /bin/cp -R index.html Growth Contacts News-and-Insights At-a-Glance Richard-Linz Marcel-Meyer assets contact-handler.php $DEPLOYPATH
+    - /bin/cp -R index.html Growth Contacts News-and-Insights At-a-Glance assets contact-handler.php $DEPLOYPATH
     # Leftover Sitejet index.php takes priority over our index.html in the
     # server's default DirectoryIndex order, so "/" kept serving the old
     # site even after our files were deployed. -f so this is a harmless
