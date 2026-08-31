@@ -596,3 +596,92 @@ h1, h2, h3, h4, h5 {
   padding-top: 20px;
 }
 .footer-bottom a { color: rgba(255,255,255,0.85); }
+
+/* ---------- Digital business card page ---------- */
+:root {
+  --tvp-green: #4a7c3f;
+}
+.profile-wrap {
+  padding: 56px 0 72px;
+  display: flex;
+  justify-content: center;
+}
+.profile-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(28,61,121,0.08);
+  padding: 40px 36px;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+}
+.profile-logo { width: 64px; height: 64px; margin: 0 auto 10px; display: block; }
+.profile-tagline {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--tvp-green);
+  margin-bottom: 22px;
+}
+.profile-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #1a1a1a;
+  margin-bottom: 2px;
+}
+.profile-title {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--tvp-green);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.profile-rule {
+  height: 1px;
+  background: var(--border);
+  margin: 22px 0;
+}
+.profile-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+  margin-bottom: 28px;
+}
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.profile-row .icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: var(--tvp-green);
+}
+.profile-row a {
+  color: #222222;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+.profile-row a:hover { color: var(--tvp-green); text-decoration: underline; }
+.profile-save-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: var(--tvp-green);
+  color: var(--white);
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.profile-save-btn:hover { background: #3d6634; text-decoration: none; }
+.profile-save-btn svg { width: 18px; height: 18px; }
